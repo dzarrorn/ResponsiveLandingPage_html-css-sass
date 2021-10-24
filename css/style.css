@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Kaushan+Script&family=Nunito:wght@200;300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+  padding: 2rem;
+  background: #359bd0;
+}
+
+header .logo h1 {
+  font-size: 4rem;
+}
+
+header .menu {
+  display: none;
+  cursor: pointer;
+  z-index: 11111;
+}
+
+header .menu i {
+  font-size: 3rem;
+}
+
+header nav {
+  width: 70rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+header nav ul li a:hover {
+  background: white;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section .content {
+  padding: 2rem;
+  text-align: justify;
+}
+
+section .content .icons a {
+  text-decoration: none;
+  margin: 0.5rem;
+  color: #455a64;
+  font-size: 3rem;
+}
+
+section .content .icons a:hover {
+  color: #359bd0;
+}
+
+section .content h1 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+section .content h1 span {
+  color: #359bd0;
+}
+
+section .content p {
+  font-size: 2rem;
+}
+
+section .content button {
+  height: 4rem;
+  width: 18rem;
+  outline: none;
+  border: none;
+  background: #359bd0;
+  margin: 2rem 0;
+  border-radius: 4rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+section .content button:hover {
+  background-color: #455a64;
+  color: white;
+}
+
+section .image img {
+  width: 50vw;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  header .menu {
+    display: block;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -200%;
+    height: 100vh;
+    width: 70vw;
+    background-color: white;
+    -webkit-box-shadow: 0 0 0 30rem rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 0 30rem rgba(0, 0, 0, 0.5);
+  }
+  header nav ul {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header nav ul li a {
+    font-size: 3rem;
+  }
+  header nav ul li a:hover {
+    background: #359bd0;
+  }
+  .toggle {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .image {
+    margin-top: -4rem;
+  }
+  section .image img {
+    width: 90vw;
+  }
+  section .content {
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

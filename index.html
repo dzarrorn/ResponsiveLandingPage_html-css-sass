@@ -9,9 +9,54 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>Responsive</title>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class="menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Footer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="content">
+        <div class="icons">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-twitter-square"></a>
+          <a href="#" class="fab fa-instagram-square"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+        <h1>become a <span>Web designer</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          doloribus. Nobis asperiores, facilis culpa animi id recusandae
+          excepturi ea officia.
+        </p>
+        <a href="#"><button>lets get started</button></a>
+      </div>
+      <div class="image">
+        <img src="images/image.svg" alt="" />
+      </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".menu .fa-bars").click(function () {
+          $(this).toggleClass("far fa-times");
+          $("nav").toggleClass("toggle");
+        });
+      });
+    </script>
   </body>
 </html>

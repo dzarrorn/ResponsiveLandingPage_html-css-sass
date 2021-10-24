@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Kaushan+Script&family=Nunito:wght@200;300;400;600;700&display=swap");
+$blue: #359bd0;
+$black: #455a64;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+  font-style: italic;
+  transition: all 0.2s;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow: hidden;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 100%;
+  padding: 2rem;
+  background: $blue;
+  .logo {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+    z-index: 11111;
+    i {
+      font-size: 3rem;
+    }
+  }
+  nav {
+    width: 70rem;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style-type: none;
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          padding: 1rem;
+          font-size: 2rem;
+          &:hover {
+            background: white;
+          }
+        }
+      }
+    }
+  }
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .content {
+    padding: 2rem;
+    text-align: justify;
+    .icons {
+      a {
+        text-decoration: none;
+        margin: 0.5rem;
+        color: $black;
+        font-size: 3rem;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 1rem 0;
+      span {
+        color: $blue;
+      }
+    }
+    p {
+      font-size: 2rem;
+    }
+    button {
+      height: 4rem;
+      width: 18rem;
+      outline: none;
+      border: none;
+      background: $blue;
+      margin: 2rem 0;
+      border-radius: 4rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      font-weight: bolder;
+      &:hover {
+        background-color: $black;
+        color: white;
+      }
+    }
+  }
+  .image {
+    img {
+      width: 50vw;
+    }
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    .menu {
+      display: block;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      right: -200%;
+      height: 100vh;
+      width: 70vw;
+      background-color: white;
+      box-shadow: 0 0 0 30rem rgba(0, 0, 0, 0.5);
+      ul {
+        height: 100%;
+        flex-flow: column;
+        li {
+          a {
+            font-size: 3rem;
+            &:hover {
+              background: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  .toggle {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  section {
+    flex-flow: column;
+    justify-content: center;
+    .image {
+      margin-top: -4rem;
+      img {
+        width: 90vw;
+      }
+    }
+    .content {
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+}
